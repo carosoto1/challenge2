@@ -9,6 +9,11 @@ class UserController:
         user.save()
         return user
     
+    #get users
+    @staticmethod
+    def get_user() -> User:
+        return User
+    
     #get user by id
     @staticmethod
     def get_user_by_id(id: int) -> User:

@@ -37,8 +37,8 @@ class AccountController:
     
     #update balance
     @staticmethod
-    def update_balance(account: Account,amount: float) -> bool:
-        balance = account.balance + amount
+    def update_balance(account: Account, ammount: float) -> bool:
+        balance = account.balance + ammount
         account.balance = balance
         account.save()
         return True
